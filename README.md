@@ -9,7 +9,7 @@ O Projeto M5 Squad 1 Organizadores do Amanhã, criado por um grupo de alunos do 
 
 Ferramentas usadas para realizar o projeto
 
-* [MYsql]
+* [Mysql]
 
 
 ## ✒️ Autores
