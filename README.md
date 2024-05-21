@@ -2,7 +2,7 @@
 
 ## 🚀 Começando
 
-O Projeto M5 Squad 1 Organizadores do Amanhã, criado por um grupo de alunos do curso de Programação para Dispositivos Móveis (PDA) na turma 5, módulo 2, é uma iniciativa inovadora que visa melhorar a organização de tempo e estudo dos estudantes. Utilizando tecnologia de ponta e suas habilidades de programação, a equipe está desenvolvendo uma aplicação móvel que ajuda os usuários a gerenciar suas rotinas de forma eficiente e prática. O projeto não só busca otimizar o tempo dos estudantes, mas também promover hábitos de estudo mais eficazes e produtivos. Esses alunos estão combinando sua paixão pela tecnologia com uma missão educacional importante, demonstrando como a inovação pode ser aplicada para resolver desafios cotidianos e melhorar a qualidade de vida.
+O Projeto M3 Squad 1 Organizadores do Amanhã, criado por um grupo de alunos do curso de Programação (PDA) na turma 1, módulo 3, é uma iniciativa inovadora que visa melhorar a organização de tempo e estudo dos estudantes. Utilizando tecnologia de ponta e suas habilidades de programação, a equipe está desenvolvendo uma aplicação móvel que ajuda os usuários a gerenciar suas rotinas de forma eficiente e prática. O projeto não só busca otimizar o tempo dos estudantes, mas também promover hábitos de estudo mais eficazes e produtivos. Esses alunos estão combinando sua paixão pela tecnologia com uma missão educacional importante, demonstrando como a inovação pode ser aplicada para resolver desafios cotidianos e melhorar a qualidade de vida.
 
 
 ## 🛠️ Construído com
