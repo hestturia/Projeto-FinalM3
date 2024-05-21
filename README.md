@@ -18,7 +18,7 @@ Aqueles que ajudaram a levantar o projeto desde o seu início
 
 * **Gabriela R reis** - *Trabalho Inicial* - [Github](https://github.com/dev-gabis)
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/FelipePires007/Projeto-Final-M2/graphs/contributors) que participaram deste projeto.
+Você também pode ver a lista de todos os [colaboradores](https://github.com/hestturia/Mini-Projeto-M3/graphs/contributors) que participaram deste projeto.
 
 ## 🎁 Expressões de gratidão
 
