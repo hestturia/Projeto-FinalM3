@@ -1,3 +1,5 @@
+USE projeto_finalm3;
+
 CREATE TABLE Usuarios (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(255),
@@ -70,3 +72,4 @@ CREATE TABLE AnotacoesGerais (
   anotacao TEXT,
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
+
