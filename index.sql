@@ -91,3 +91,14 @@ INSERT INTO Usuarios (nome, email, senha)
 
 INSERT INTO Usuarios (nome, email, senha) 
     VALUES ('Julia Nascimento', 'julia.nascimento@example.com', 'senha123');
+
+-- Inserções da tabela cronogramas
+INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim) 
+    VALUES (1, '2024-01-01', '2024-01-31');
+
+INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim) 
+    VALUES (2, '2024-02-01', '2024-02-28');
+
+INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim) 
+    VALUES (3, '2024-03-01', '2024-03-31');
+    
