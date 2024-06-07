@@ -102,3 +102,12 @@ INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim)
 INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim) 
     VALUES (3, '2024-03-01', '2024-03-31');
     
+-- inserções da tabela de distrações 
+INSERT INTO Distracoes (usuario_id, app_site, data_bloqueio)
+  VALUES (1, 'Facebook', '2024-05-01 10:00:00');
+ 
+INSERT INTO Distracoes (usuario_id, app_site, data_bloqueio) 
+  VALUES (2, 'Instagram', '2024-05-02 11:00:00');
+
+INSERT INTO Distracoes (usuario_id, app_site, data_bloqueio) 
+  VALUES (3, 'YouTube', '2024-05-03 12:00:00');
