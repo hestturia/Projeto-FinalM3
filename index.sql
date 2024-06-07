@@ -126,10 +126,20 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
 
 -- Inserções na tabela FerramentasEstudo
 INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
-    VALUES (1, 'Khan Academy', 'Matemática Avançada');
+        VALUES (1, 'Khan Academy', 'Matemática Avançada');
 
 INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
-    VALUES (2, 'Coursera', 'Física Teórica');
+        VALUES (2, 'Coursera', 'Física Teórica');
 
 INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
-    VALUES (3, 'edX', 'Química Orgânica');
+        VALUES (3, 'edX', 'Química Orgânica');
+
+-- Inserções na tabela Projetos
+INSERT INTO Projetos (usuario_id, data_fim, descricao, status) 
+        VALUES (1, '2024-09-01', 'Projeto de pesquisa em matemática', 'em andamento');
+
+INSERT INTO Projetos (usuario_id, data_fim, descricao, status) 
+        VALUES (2, '2024-10-01', 'Projeto de física aplicada', 'concluído');
+        
+INSERT INTO Projetos (usuario_id, data_fim, descricao, status) 
+        VALUES (3, '2024-11-01', 'Projeto de química experimental', 'em andamento');
