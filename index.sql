@@ -73,9 +73,20 @@ CREATE TABLE AnotacoesGerais (
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
-INSERT INTO Usuarios (nome, email, senha) VALUES ('João Pedro', 'joao.pedro@example.com', 'senha123');
-INSERT INTO Usuarios (nome, email, senha) VALUES ('Gabriela', 'gabriela@example.com', 'senha123');
-INSERT INTO Usuarios (nome, email, senha) VALUES ('Phelipe Cezario', 'phelipe.cezario@example.com', 'senha123');
-INSERT INTO Usuarios (nome, email, senha) VALUES ('Letícia Souza', 'leticia.souza@example.com', 'senha123');
-INSERT INTO Usuarios (nome, email, senha) VALUES ('João Miguel', 'joao.miguel@example.com', 'senha123');
-INSERT INTO Usuarios (nome, email, senha) VALUES ('Julia Nascimento', 'julia.nascimento@example.com', 'senha123');
+INSERT INTO Usuarios (nome, email, senha) 
+    VALUES ('João Pedro', 'joao.pedro@example.com', 'senha123');
+
+INSERT INTO Usuarios (nome, email, senha) 
+    VALUES ('Gabriela', 'gabriela@example.com', 'senha123');
+
+INSERT INTO Usuarios (nome, email, senha) 
+    VALUES ('Phelipe Cezario', 'phelipe.cezario@example.com', 'senha123');
+
+INSERT INTO Usuarios (nome, email, senha) 
+    VALUES ('Letícia Souza', 'leticia.souza@example.com', 'senha123');
+
+INSERT INTO Usuarios (nome, email, senha) 
+    VALUES ('João Miguel', 'joao.miguel@example.com', 'senha123');
+
+INSERT INTO Usuarios (nome, email, senha) 
+    VALUES ('Julia Nascimento', 'julia.nascimento@example.com', 'senha123');
