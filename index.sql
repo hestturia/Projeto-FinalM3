@@ -73,6 +73,7 @@ CREATE TABLE AnotacoesGerais (
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
+-- Inserções da tabela Usuários
 INSERT INTO Usuarios (nome, email, senha) 
     VALUES ('João Pedro', 'joao.pedro@example.com', 'senha123');
 
