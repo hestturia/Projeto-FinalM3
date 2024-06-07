@@ -39,7 +39,7 @@ CREATE TABLE Metas (
   usuario_id INT,
   descricao TEXT,
   data_alvo DATE,
-  status VARCHAR(50),
+  status ENUM('completo', 'incompleto', 'em andamento'),
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -63,6 +63,8 @@ CREATE TABLE Projetos (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   usuario_id INT,
   data_fim DATE,
+  descricao VARCHAR(255),
+  status ENUM('completo', 'incompleto', 'em andamento')
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
