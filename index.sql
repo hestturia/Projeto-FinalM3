@@ -1,3 +1,5 @@
+USE projeto_finalm3;
+
 CREATE TABLE Usuarios (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(255),
