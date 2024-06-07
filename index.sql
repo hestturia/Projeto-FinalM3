@@ -121,3 +121,13 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
 
 INSERT INTO Metas (usuario_id, descricao, data_alvo, status) 
         VALUES (3, 'Terminar o projeto de química', '2024-08-01', 'completo');
+
+-- Inserções na tabela FerramentasEstudo
+INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
+    VALUES (1, 'Khan Academy', 'Matemática Avançada');
+
+INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
+    VALUES (2, 'Coursera', 'Física Teórica');
+
+INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
+    VALUES (3, 'edX', 'Química Orgânica');
