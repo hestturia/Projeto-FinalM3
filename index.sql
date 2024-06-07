@@ -39,7 +39,7 @@ CREATE TABLE Metas (
   usuario_id INT,
   descricao TEXT,
   data_alvo DATE,
-  status ENUM('completo', 'incompleto', 'em andamento'),
+  status VARCHAR (50),
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -64,7 +64,7 @@ CREATE TABLE Projetos (
   usuario_id INT,
   data_fim DATE,
   descricao VARCHAR(255),
-  status ENUM('completo', 'incompleto', 'em andamento')
+  status ENUM('completo', 'incompleto', 'em andamento'),
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -72,6 +72,7 @@ CREATE TABLE AnotacoesGerais (
   ID INT PRIMARY KEY AUTO_INCREMENT,
   usuario_id INT,
   anotacao TEXT,
+  data_criacao DATE,
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -140,6 +141,17 @@ INSERT INTO Projetos (usuario_id, data_fim, descricao, status)
 
 INSERT INTO Projetos (usuario_id, data_fim, descricao, status) 
         VALUES (2, '2024-10-01', 'Projeto de física aplicada', 'concluído');
-        
+
 INSERT INTO Projetos (usuario_id, data_fim, descricao, status) 
         VALUES (3, '2024-11-01', 'Projeto de química experimental', 'em andamento');
+
+
+-- Inserções na tabela Anotações Gerais
+INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao) 
+        VALUES (1, 'Nota sobre teoria dos conjuntos', '2024-11-01');
+
+INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao) 
+        VALUES (2, 'Nota sobre leis de Newton', '2024-05-02');
+
+INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao) 
+        VALUES (3, 'Nota sobre estequiometria', '2024-05-03');
