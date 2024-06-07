@@ -111,3 +111,13 @@ INSERT INTO Distracoes (usuario_id, app_site, data_bloqueio)
 
 INSERT INTO Distracoes (usuario_id, app_site, data_bloqueio) 
   VALUES (3, 'YouTube', '2024-05-03 12:00:00');
+
+  -- Inserções na tabela Metas
+  INSERT INTO Metas (usuario_id, descricao, data_alvo, status) 
+        VALUES (1, 'Completar o curso de álgebra', '2024-06-01', 'em progresso');
+
+INSERT INTO Metas (usuario_id, descricao, data_alvo, status) 
+        VALUES (2, 'Ler o livro de física', '2024-07-01', 'incompleto');
+
+INSERT INTO Metas (usuario_id, descricao, data_alvo, status) 
+        VALUES (3, 'Terminar o projeto de química', '2024-08-01', 'completo');
