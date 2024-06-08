@@ -56,6 +56,8 @@ CREATE TABLE FerramentasEstudo (
   usuario_id INT,
   app_site VARCHAR(255),
   biblioteca TEXT,
+  tipo VARCHAR(255),
+  ultima_utilizacao DATETIME,
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -64,7 +66,7 @@ CREATE TABLE Projetos (
   usuario_id INT,
   data_fim DATE,
   descricao VARCHAR(255),
-  status ENUM('completo', 'incompleto', 'em andamento'),
+  status VARCHAR(50),
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -73,6 +75,7 @@ CREATE TABLE AnotacoesGerais (
   usuario_id INT,
   anotacao TEXT,
   data_criacao DATE,
+  ultima_modificacao DATETIME,
   FOREIGN KEY (usuario_id) REFERENCES Usuarios(ID)
 );
 
@@ -126,14 +129,14 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
         VALUES (3, 'Terminar o projeto de química', '2024-08-01', 'completo');
 
 -- Inserções na tabela FerramentasEstudo
-INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
-        VALUES (1, 'Khan Academy', 'Matemática Avançada');
+INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca, tipo, ultima_utilizacao) 
+        VALUES (1, 'Khan Academy', 'Matemática Avançada','site','2024-05-01 15:00:00');
 
-INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
-        VALUES (2, 'Coursera', 'Física Teórica');
+INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca, tipo, ultima_utilizacao) 
+        VALUES (2, 'Coursera', 'Física Teórica', 'app','2024-05-02 16:00:00');
 
-INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca) 
-        VALUES (3, 'edX', 'Química Orgânica');
+INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca, tipo, ultima_utilizacao) 
+        VALUES (3, 'edX', 'Química Orgânica', 'site', '2024-05-03 17:00:00');
 
 -- Inserções na tabela Projetos
 INSERT INTO Projetos (usuario_id, data_fim, descricao, status) 
