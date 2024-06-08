@@ -158,3 +158,8 @@ INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao)
 
 INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao) 
         VALUES (3, 'Nota sobre estequiometria', '2024-05-03');
+
+--Análise: Número de Distrações por Usuários
+SELECT usuario_id, COUNT(*) as total_distracoes
+FROM Distracoes
+GROUP BY usuario_id;
