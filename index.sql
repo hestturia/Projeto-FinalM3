@@ -163,3 +163,9 @@ INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao)
 SELECT usuario_id, COUNT(*) as total_distracoes
 FROM Distracoes
 GROUP BY usuario_id;
+
+--Análise: Distrações mais frequentes
+SELECT app_site, COUNT(*) as total_ocorrencias
+FROM Distracoes
+GROUP BY app_site
+ORDER BY total_ocorrencias DESC;
