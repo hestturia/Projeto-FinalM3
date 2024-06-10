@@ -116,7 +116,7 @@ INSERT INTO SessaoEstudos (usuario_id, cronograma_id, materia, tempo_gasto, nota
 
 INSERT INTO SessaoEstudos (usuario_id, cronograma_id, materia, tempo_gasto, notas) 
 	VALUES (2, 2, 'Física', 90, 'Estudo sobre mecânica clássica');
-  
+
 INSERT INTO SessaoEstudos (usuario_id, cronograma_id, materia, tempo_gasto, notas) 
 	VALUES (3, 3, 'Química', 60, 'Estudo sobre reações químicas');
 
@@ -140,6 +140,17 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
 
 INSERT INTO Metas (usuario_id, descricao, data_alvo, status) 
         VALUES (3, 'Terminar o projeto de química', '2024-08-01', 'completo');
+
+--Inserções na tabela Alertas
+INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
+	  VALUES (1, 'Estudar para a prova de matemática', '2024-05-10 08:00:00');
+    
+INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
+	  VALUES (2, 'Entrega do trabalho de física', '2024-05-11 09:00:00');
+    
+INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
+	  VALUES (3, 'Reunião do grupo de química', '2024-05-12 10:00:00');
+
 
 --Inserções na tabela Alertas
 INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
