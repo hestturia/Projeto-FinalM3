@@ -27,3 +27,8 @@ SELECT usuario_id, COUNT(*) as projetos_concluidos
 FROM Projetos
 WHERE status = 'concluído'
 GROUP BY usuario_id;
+
+--Metas por status
+SELECT status, COUNT(*) as total_metas
+FROM Metas
+GROUP BY status;
