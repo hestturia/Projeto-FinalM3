@@ -15,3 +15,9 @@ SELECT usuario_id, COUNT(*) as metas_completas
 FROM Metas
 WHERE status = 'completo'
 GROUP BY usuario_id;
+
+-- júlia nascimento 
+--Última Utilização de Ferramentas de Estudo
+SELECT usuario_id, MAX(ultima_utilizacao) as ultima_utilizacao
+FROM FerramentasEstudo
+GROUP BY usuario_id;
