@@ -1,3 +1,5 @@
+CREATE DATABASE projeto_finalm3;
+
 USE projeto_finalm3;
 
 CREATE TABLE Usuarios (
