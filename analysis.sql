@@ -1,4 +1,4 @@
-
+--Phelipe Cezario
 --Análise: Número de Distrações por Usuários
 SELECT usuario_id, COUNT(*) as total_distracoes
 FROM Distracoes
