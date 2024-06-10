@@ -128,6 +128,16 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
 INSERT INTO Metas (usuario_id, descricao, data_alvo, status) 
         VALUES (3, 'Terminar o projeto de química', '2024-08-01', 'completo');
 
+--Inserções na tabela Alertas
+INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
+VALUES (1, 'Estudar para a prova de matemática', '2024-05-10 08:00:00');
+
+INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
+VALUES (2, 'Entrega do trabalho de física', '2024-05-11 09:00:00');
+
+INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
+VALUES (3, 'Reunião do grupo de química', '2024-05-12 10:00:00');
+
 -- Inserções na tabela FerramentasEstudo
 INSERT INTO FerramentasEstudo (usuario_id, app_site, biblioteca, tipo, ultima_utilizacao) 
         VALUES (1, 'Khan Academy', 'Matemática Avançada','site','2024-05-01 15:00:00');
