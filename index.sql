@@ -109,6 +109,17 @@ INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim)
 
 INSERT INTO Cronogramas (usuario_id, data_inicio, data_fim) 
     VALUES (3, '2024-03-01', '2024-03-31');
+
+--  Inserções na tabela Sessão de Estudos
+INSERT INTO SessaoEstudos (usuario_id, cronograma_id, materia, tempo_gasto, notas) 
+	VALUES (1, 1, 'Matemática', 120, 'Estudo sobre álgebra linear');
+
+INSERT INTO SessaoEstudos (usuario_id, cronograma_id, materia, tempo_gasto, notas) 
+	VALUES (2, 2, 'Física', 90, 'Estudo sobre mecânica clássica');
+  
+INSERT INTO SessaoEstudos (usuario_id, cronograma_id, materia, tempo_gasto, notas) 
+	VALUES (3, 3, 'Química', 60, 'Estudo sobre reações químicas');
+
     
 -- inserções da tabela de distrações 
 INSERT INTO Distracoes (usuario_id, app_site, data_bloqueio)
