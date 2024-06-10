@@ -192,3 +192,9 @@ GROUP BY usuario_id;
 SELECT usuario_id, MAX(ultima_utilizacao) as ultima_utilizacao
 FROM FerramentasEstudo
 GROUP BY usuario_id;
+
+--Projetos Concluídos por Usuário
+SELECT usuario_id, COUNT(*) as projetos_concluidos
+FROM Projetos
+WHERE status = 'concluído'
+GROUP BY usuario_id;
