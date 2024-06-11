@@ -48,3 +48,4 @@ GROUP BY usuario_id;
 SELECT usuario_id, COUNT(*) as total_anotacoes
 FROM AnotacoesGerais
 GROUP BY usuario_id;
+

@@ -240,3 +240,9 @@ GROUP BY usuario_id;
 SELECT usuario_id, COUNT(*) as total_anotacoes
 FROM AnotacoesGerais
 GROUP BY usuario_id;
+
+--Ferramentas de estudos mais usadas
+SELECT app_site, COUNT(*) as total_uso
+FROM FerramentasEstudo
+GROUP BY app_site
+ORDER BY total_uso DESC;
