@@ -55,3 +55,8 @@ SELECT app_site, COUNT(*) as total_uso
 FROM FerramentasEstudo
 GROUP BY app_site
 ORDER BY total_uso DESC;
+
+--Total de Sessões de Estudos por Matéria
+SELECT materia, COUNT(*) as total_sessoes
+FROM SessaoEstudos
+GROUP BY materia;
