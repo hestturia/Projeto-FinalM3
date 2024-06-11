@@ -256,3 +256,19 @@ GROUP BY materia;
 SELECT usuario_id, SUM(tempo_gasto) as total_tempo_gasto
 FROM SessaoEstudos
 GROUP BY usuario_id;
+
+--Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+SELECT usuario_id, app_site, COUNT(*) as total_distractions
+FROM Distracoes
+GROUP BY usuario_id, app_site
+
+--Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+SELECT usuario_id, app_site, COUNT(*) as total_distractions
+FROM Distracoes
+GROUP BY usuario_id, app_site
+
+--Usuários com o Maior Número de Ferramentas de Estudo Utilizadas
+SELECT usuario_id, COUNT(DISTINCT app_site) as total_ferramentas
+FROM FerramentasEstudo
+GROUP BY usuario_id
+ORDER BY total_ferramentas DESC;
