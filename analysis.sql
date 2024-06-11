@@ -43,3 +43,8 @@ GROUP BY materia;
 SELECT usuario_id, COUNT(*) as total_cronogramas
 FROM Cronogramas
 GROUP BY usuario_id;
+
+--Anotações por usuário
+SELECT usuario_id, COUNT(*) as total_anotacoes
+FROM AnotacoesGerais
+GROUP BY usuario_id;
