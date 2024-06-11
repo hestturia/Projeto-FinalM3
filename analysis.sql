@@ -38,3 +38,8 @@ GROUP BY status;
 SELECT materia, AVG(tempo_gasto) as media_tempo_gasto
 FROM SessaoEstudos
 GROUP BY materia;
+
+--Número de cronogramas por Usuário
+SELECT usuario_id, COUNT(*) as total_cronogramas
+FROM Cronogramas
+GROUP BY usuario_id;
