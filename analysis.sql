@@ -65,3 +65,19 @@ GROUP BY materia;
 SELECT usuario_id, SUM(tempo_gasto) as total_tempo_gasto
 FROM SessaoEstudos
 GROUP BY usuario_id;
+
+--Gabriela Reis 
+--Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+SELECT usuario_id, app_site, COUNT(*) as total_distractions
+FROM Distracoes
+GROUP BY usuario_id, app_site;
+
+--Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+SELECT usuario_id, app_site, COUNT(*) as total_distractions
+FROM Distracoes
+GROUP BY usuario_id, app_site;
+
+--Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+SELECT usuario_id, app_site, COUNT(*) as total_distractions
+FROM Distracoes
+GROUP BY usuario_id, app_site;
