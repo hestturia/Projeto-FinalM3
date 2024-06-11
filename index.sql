@@ -225,3 +225,8 @@ GROUP BY usuario_id;
 SELECT status, COUNT(*) as total_metas
 FROM Metas
 GROUP BY status;
+
+--Média de tempo gasto por Matéria
+SELECT materia, AVG(tempo_gasto) as media_tempo_gasto
+FROM SessaoEstudos
+GROUP BY materia;
