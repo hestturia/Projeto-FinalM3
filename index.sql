@@ -251,3 +251,8 @@ ORDER BY total_uso DESC;
 SELECT materia, COUNT(*) as total_sessoes
 FROM SessaoEstudos
 GROUP BY materia;
+
+--Tempo gasto com Estudos por Usuários
+SELECT usuario_id, SUM(tempo_gasto) as total_tempo_gasto
+FROM SessaoEstudos
+GROUP BY usuario_id;
