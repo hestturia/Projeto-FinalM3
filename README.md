@@ -1,4 +1,4 @@
-# Projeto M2 Squad 4 Programadores do amanhã
+# Projeto M3 Squad 1 Programadores do amanhã
 
 ## 🚀 Começando
 
