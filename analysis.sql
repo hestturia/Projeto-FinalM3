@@ -81,3 +81,23 @@ GROUP BY usuario_id, app_site;
 SELECT usuario_id, app_site, COUNT(*) as total_distractions
 FROM Distracoes
 GROUP BY usuario_id, app_site;
+
+--Joao Miguel
+--Usuário com maior número de Sessão de Estudos
+SELECT usuario_id, COUNT(*) AS total_sessoes
+FROM SessaoEstudos
+GROUP BY usuario_id
+ORDER BY total_sessoes DESC;
+
+--Números de Metas concluídas por mês
+SELECT MONTH(data_alvo) AS mes, COUNT(*) AS metas_concluidas
+FROM Metas
+WHERE status = 'completo'
+GROUP BY mes
+ORDER BY mes;
+
+--Ferramentas de Estudos mais usadas recentemente
+SELECT usuario_id, app_site, MAX(ultima_utilizacao) AS ultima_utilizacao
+FROM FerramentasEstudo
+GROUP BY usuario_id, app_site
+ORDER BY ultima_utilizacao DESC;
