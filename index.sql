@@ -181,7 +181,7 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
     VALUES (6, 'Realizar experimento de biologia', '2024-08-10', 'completo');
 
 
---Inserções na tabela Alertas
+-- Inserções na tabela Alertas
 INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
 	  VALUES (1, 'Estudar para a prova de matemática', '2024-05-10 08:00:00');
     
@@ -261,74 +261,74 @@ INSERT INTO AnotacoesGerais (usuario_id, anotacao, data_criacao, ultima_modifica
       VALUES (6, 'Nota sobre evolução das espécies', '2024-05-03', '2024-05-03 16:00:00');
 
 
---Análise: Número de Distrações por Usuários
+-- Análise: Número de Distrações por Usuários
 SELECT usuario_id, COUNT(*) as total_distracoes
 FROM Distracoes
 GROUP BY usuario_id;
 
---Análise: Distrações mais frequentes
+-- Análise: Distrações mais frequentes
 SELECT app_site, COUNT(*) as total_ocorrencias
 FROM Distracoes
 GROUP BY app_site
 ORDER BY total_ocorrencias DESC;
 
---Análise: Metas completas por Usuário
+-- Análise: Metas completas por Usuário
 SELECT usuario_id, COUNT(*) as metas_completas
 FROM Metas
 WHERE status = 'completo'
 GROUP BY usuario_id;
 
---Última Utilização de Ferramentas de Estudo
-SELECT usuario_id, MAX(ultima_utilizacao) as ultima_utilizacao
+-- Última Utilização de Ferramentas de Estudo
+SELECT usuario_id, MAX(ultima_utilizacao) AS ultima_utilizacao
 FROM FerramentasEstudo
-GROUP BY usuario_id;
+GROUP BY usuario_id;
 
---Projetos Concluídos por Usuário
-SELECT usuario_id, COUNT(*) as projetos_concluidos
+-- Projetos Concluídos por Usuário
+SELECT usuario_id, COUNT(*) AS projetos_concluidos
 FROM Projetos
 WHERE status = 'concluído'
-GROUP BY usuario_id;
+GROUP BY usuario_id;
 
---Metas por status
-SELECT status, COUNT(*) as total_metas
+-- Metas por status
+SELECT status, COUNT(*) AS total_metas
 FROM Metas
-GROUP BY status;
+GROUP BY status;
 
---Média de tempo gasto por Matéria
+-- Média de tempo gasto por Matéria
 SELECT materia, AVG(tempo_gasto) as media_tempo_gasto
 FROM SessaoEstudos
 GROUP BY materia;
 
---Número de cronogramas por Usuário
+-- Número de cronogramas por Usuário
 SELECT usuario_id, COUNT(*) as total_cronogramas
 FROM Cronogramas
 GROUP BY usuario_id;
 
---Anotações por usuário
+-- Anotações por usuário
 SELECT usuario_id, COUNT(*) as total_anotacoes
 FROM AnotacoesGerais
 GROUP BY usuario_id;
 
---Ferramentas de estudos mais usadas
+-- Ferramentas de estudos mais usadas
 SELECT app_site, COUNT(*) as total_uso
 FROM FerramentasEstudo
 GROUP BY app_site
 ORDER BY total_uso DESC;
 
---Total de Sessões de Estudos por Matéria
+-- Total de Sessões de Estudos por Matéria
 SELECT materia, COUNT(*) as total_sessoes
 FROM SessaoEstudos
 GROUP BY materia;
 
---Tempo gasto com Estudos por Usuários
+-- Tempo gasto com Estudos por Usuários
 SELECT usuario_id, SUM(tempo_gasto) as total_tempo_gasto
 FROM SessaoEstudos
 GROUP BY usuario_id;
 
---Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
-SELECT usuario_id, app_site, COUNT(*) as total_distractions
+-- Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+SELECT usuario_id, app_site, COUNT(*) AS total_distractions
 FROM Distracoes
-GROUP BY usuario_id, app_site
+GROUP BY usuario_id, app_site;
 
 --Total de alertas enviados por Mês
 SELECT DATE_FORMAT(data_alerta, '%Y-%m') as mes, COUNT(*) as total_alertas
@@ -336,27 +336,27 @@ FROM Alertas
 GROUP BY DATE_FORMAT(data_alerta, '%Y-%m')
 ORDER BY mes;
 
---Usuários com o Maior Número de Ferramentas de Estudo Utilizadas
-SELECT usuario_id, COUNT(DISTINCT app_site) as total_ferramentas
+-- Usuários com o Maior Número de Ferramentas de Estudo Utilizadas
+SELECT usuario_id, COUNT(DISTINCT app_site) AS total_ferramentas
 FROM FerramentasEstudo
 GROUP BY usuario_id
-ORDER BY total_ferramentas DESC;
+ORDER BY total_ferramentas DESC;
 
---Usuário com maior número de Sessão de Estudos
+-- Usuário com maior número de Sessão de Estudos
 SELECT usuario_id, COUNT(*) AS total_sessoes
 FROM SessaoEstudos
 GROUP BY usuario_id
-ORDER BY total_sessoes DESC;
+ORDER BY total_sessoes DESC;
 
---Números de Metas concluídas por mês
+-- Números de Metas concluídas por mês
 SELECT MONTH(data_alvo) AS mes, COUNT(*) AS metas_concluidas
 FROM Metas
 WHERE status = 'completo'
 GROUP BY mes
-ORDER BY mes;
+ORDER BY mes;
 
---Ferramentas de Estudos mais usadas recentemente
+-- Ferramentas de Estudos mais usadas recentemente
 SELECT usuario_id, app_site, MAX(ultima_utilizacao) AS ultima_utilizacao
 FROM FerramentasEstudo
 GROUP BY usuario_id, app_site
-ORDER BY ultima_utilizacao DESC;
+ORDER BY ultima_utilizacao DESC;
