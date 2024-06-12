@@ -330,10 +330,11 @@ SELECT usuario_id, app_site, COUNT(*) as total_distractions
 FROM Distracoes
 GROUP BY usuario_id, app_site
 
---Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
-SELECT usuario_id, app_site, COUNT(*) as total_distractions
-FROM Distracoes
-GROUP BY usuario_id, app_site
+--Total de alertas enviados por Mês
+SELECT DATE_FORMAT(data_alerta, '%Y-%m') as mes, COUNT(*) as total_alertas
+FROM Alertas
+GROUP BY DATE_FORMAT(data_alerta, '%Y-%m')
+ORDER BY mes;
 
 --Usuários com o Maior Número de Ferramentas de Estudo Utilizadas
 SELECT usuario_id, COUNT(DISTINCT app_site) as total_ferramentas
