@@ -181,7 +181,7 @@ INSERT INTO Metas (usuario_id, descricao, data_alvo, status)
     VALUES (6, 'Realizar experimento de biologia', '2024-08-10', 'completo');
 
 
--- Inserções na tabela Alertas
+-- Inserções na tabela Alerta
 INSERT INTO Alertas (usuario_id, mensagem, data_alerta) 
 	  VALUES (1, 'Estudar para a prova de matemática', '2024-05-10 08:00:00');
     
@@ -272,7 +272,7 @@ FROM Distracoes
 GROUP BY app_site
 ORDER BY total_ocorrencias DESC;
 
--- Análise: Metas completas por Usuário
+-- Metas completas por Usuário
 SELECT usuario_id, COUNT(*) as metas_completas
 FROM Metas
 WHERE status = 'completo'
@@ -325,18 +325,20 @@ SELECT usuario_id, SUM(tempo_gasto) as total_tempo_gasto
 FROM SessaoEstudos
 GROUP BY usuario_id;
 
--- Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
-SELECT usuario_id, app_site, COUNT(*) AS total_distractions
-FROM Distracoes
-GROUP BY usuario_id, app_site;
-
--- Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
+--Quantidade de Distrações por Tipo (App ou Site) para Cada Usuário
 SELECT usuario_id, app_site, COUNT(*) as total_distractions
 FROM Distracoes
 GROUP BY usuario_id, app_site;
 
--- Usuários com o Maior Número de Ferramentas de Estudo Utilizadas
-SELECT usuario_id, COUNT(DISTINCT app_site) AS total_ferramentas
+
+--Total de alertas enviados por Mês
+SELECT DATE_FORMAT(data_alerta, '%Y-%m') as mes, COUNT(*) as total_alertas
+FROM Alertas
+GROUP BY DATE_FORMAT(data_alerta, '%Y-%m')
+ORDER BY mes;
+
+--Usuários com o Maior Número de Ferramentas de Estudo Utilizadas
+SELECT usuario_id, COUNT(DISTINCT app_site) as total_ferramentas
 FROM FerramentasEstudo
 GROUP BY usuario_id
 ORDER BY total_ferramentas DESC;
