@@ -10,13 +10,19 @@ O Projeto M3 Squad 1 Organizadores do Amanhã, criado por um grupo de alunos do 
 Ferramentas usadas para realizar o projeto
 
 * [Mysql]
-
+* [DbDiagram]
+* [BRModelo]
 
 ## ✒️ Autores
 
 Aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Gabriela R reis** - *Trabalho Inicial* - [Github](https://github.com/dev-gabis)
+* **Phelipe Cezario** - *Líder* 
+* **Gabriela R reis** - *Gestora de conhecimento* 
+* **João Pedro** - Comunicador
+* **João Miguel** - Colaborador
+* **Letícia Souza** - Colaboradora
+* **Julia Nascimento** - Colaboradora
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/hestturia/Mini-Projeto-M3/graphs/contributors) que participaram deste projeto.
 
