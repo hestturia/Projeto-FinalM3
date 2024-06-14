@@ -4,6 +4,9 @@
 
 O Projeto M3 Squad 1 Organizadores do Amanhã, criado por um grupo de alunos do curso de Programação (PDA) na turma 5, módulo 3, é uma iniciativa inovadora que visa melhorar a organização de tempo e estudo dos estudantes. Utilizando tecnologia de ponta e suas habilidades de programação, a equipe está desenvolvendo uma aplicação móvel que ajuda os usuários a gerenciar suas rotinas de forma eficiente e prática. O projeto não só busca otimizar o tempo dos estudantes, mas também promover hábitos de estudo mais eficazes e produtivos. Esses alunos estão combinando sua paixão pela tecnologia com uma missão educacional importante, demonstrando como a inovação pode ser aplicada para resolver desafios cotidianos e melhorar a qualidade de vida.
 
+## 
+ [Apresentação do projeto](https://www.canva.com/design/DAGHS8HfNd4/6qPD9O9ufFHY8ecK52j6QA/edit?utm_content=DAGHS8HfNd4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 
 ## 🛠️ Construído com
 
